@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Didáctico: Números y Cantidades</title>
+    <!-- Modern and fun fonts for kids -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🔢 Juego de Números 🍎</h1>
+            <p>¡Haz clic en un número y luego en la cantidad correcta de objetos!</p>
+            <div class="controls">
+                <button id="restart-btn" class="btn">Empezar de nuevo</button>
+            </div>
+        </header>
+        
+        <main class="board">
+            <div class="column" id="numbers-column">
+                <!-- Numbers will be injected here by JS -->
+            </div>
+            <div class="column" id="quantities-column">
+                <!-- Quantities will be injected here by JS -->
+            </div>
+        </main>
+        
+        <!-- Victory Modal -->
+        <div id="victory-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>¡Felicitaciones! 🎉</h2>
+                <p>¡Has unido todos los números correctamente!</p>
+                <div class="stars">⭐⭐⭐</div>
+                <button id="play-again-btn" class="btn btn-large">Jugar otra vez</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
